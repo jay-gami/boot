@@ -1,0 +1,126 @@
+
+body{
+    background-color:lightgray ;
+}
+.port{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+.two{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.three{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    color: white;
+
+}
+.port ul {
+    flex-direction: row;
+}
+/* .p{
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+.col1{
+    padding: 20px;
+    border-radius: 10%;
+    border-collapse: collapse;
+}
+
+.eote{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.note{
+    background-color: white;
+    flex-direction: column;
+
+    
+
+}
+
+.no{
+    width: 50%;
+    margin-right: 70px;
+
+}
+
+/* .not1{
+    padding: 10px;
+    margin: 10px;
+}
+
+.not2 {
+    padding: 10px;
+    margin: 10px;
+}
+.not3 {
+    padding: 10px;
+    margin: 10px;
+}
+.not4 {
+    margin: 10px;
+    padding: 10px;
+} */
+.container h1{
+    text-align: center;}
+.note{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+.last{
+    background-color:lightblue;
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    padding: 0;
+}
+
+.left2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.left1{
+    width: 50%;
+}
+
+.right2{
+    width: 50%;
+}
+
+.left{
+    width: 50%;
+    
+}
+
+.right {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.right ul li{
+    list-style-type: none;
+}
+
+.footer{
+    text-align: center;
+}
