@@ -1,6 +1,15 @@
 
-body{
-    background-color:lightgray ;
+.main{
+    padding-bottom: auto;
+}
+.mai-d{
+    margin-bottom: -49px;
+    padding-left:70px;
+    padding-right: 80px;
+    /* transform: translate(1px,100px); */
+}
+.div{
+    margin-top: 30px;
 }
 .port{
     display: flex;
@@ -30,17 +39,25 @@ body{
 } */
 
 .col1{
-    padding: 20px;
-    border-radius: 10%;
+    padding-top: 20px;
+    padding-bottom: 100px ;
+    padding-left: 20px;
+    border-radius: 5%;
     border-collapse: collapse;
 }
 
-.eote{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+.lia{
+    background-color: green;
+    border-radius: 5%;
+    padding-left: 12px;
 
 }
+
+/* .eote{
+    display: flex;
+    flex-wrap: wrap;
+
+} */
 
 .note{
     background-color: white;
@@ -73,30 +90,35 @@ body{
     margin: 10px;
     padding: 10px;
 } */
-.container h1{
-    text-align: center;}
+/* .container h1{
+    text-align: center;} */
 .note{
     display: flex;
     flex-wrap: wrap;
     width: 50%;
 }
 .form{
+    padding-left: 40px;
     display: flex;
     flex-wrap: wrap;
     width: 50%;
 }
 .last{
-    background-color:lightblue;
     display: flex;
     flex-wrap: wrap;
     width:100%;
-    padding: 0;
+    padding-bottom: 100px;
+    padding-left: 100px;
 }
+
+
+
 
 .left2{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    margin-top: 30px;
 }
 .left1{
     width: 50%;
@@ -111,10 +133,15 @@ body{
     
 }
 
-.right {
+.right  {
     display: flex;
     flex-wrap: wrap;
     width: 50%;
+}
+
+.right ul li a{
+    color: white;
+    text-decoration: none;
 }
 
 .right ul li{
@@ -124,3 +151,58 @@ body{
 .footer{
     text-align: center;
 }
+
+
+
+/* p{
+    font-size: 10px;
+} */
+
+
+
+h4{
+    text-align: center;
+    
+    
+    }
+    
+    h5{
+        text-align: center;
+        padding-top: 70px;
+        font-size: 70px;
+    }
+    .ww{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
+    .two1{
+        padding-right: 30px;
+        border-radius: 20%;
+        list-style-type: none;
+        border: 1px solid wheat;
+        border-collapse: collapse;
+        /* padding: 0; */
+        text-align: center;
+        margin: 5px;
+        padding-bottom: 60px;
+        padding-top: 30px;
+        
+    }
+    .mm{
+        font-size: 30px;
+    }
+    
+    .col li{
+        height: 200px;
+        /* margin-left: 20px;
+        margin-right: 20px; */
+        font-size: 5px;
+    }
+   
+ 
+    
+    .one{
+        padding: 3px;
+        text-align: center;
+    }
