@@ -16,7 +16,7 @@
 
   <body>
     <div class="container-fluid md-4">
-      <div class="row m-0" style="background-color: rgb(68, 128, 72)" ;>
+      <div class="row m-0" ;>
         <div class="col-md-8 p-0">
           <header class="ps-5 text-light">contact@example.com</header>
         </div>
@@ -31,7 +31,7 @@
         </div>
       </div>
 
-      <nav class="navbar navbar-expand-lg bg-success navbar-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark">
         <!-- <div class="container-fluid"> -->
         <a class="navbar-brand ps-5" href="#">IMPACT</a>
         <button
@@ -66,14 +66,66 @@
             <li class="nav-item">
               <a class="nav-link text-light" href="#">Blog</a>
             </li>
+
             <li class="nav-item">
               <a class="nav-link text-light" href="#">Portfolio</a>
             </li>
+            <div class="dropdown">
+              <button
+                type="button"
+                class="btn dropdown-toggle text-light"
+                data-bs-toggle="dropdown"
+              >
+                Color
+              </button>
+              <div class="dropdown-menu">
+                <li class="dropdown-item" id="#red" href="#">
+                  <input type="color" onclick="color()" />select color
+                </li>
+                <li class="dropdown-item" id="#pink" href="#" onclick="pink()">
+                  Pink
+                </li>
+
+                <li
+                  class="dropdown-item"
+                  id="#Black"
+                  href="#"
+                  onclick="Black()"
+                >
+                  Black
+                </li>
+                <li
+                  class="dropdown-item"
+                  id="#Violet"
+                  href="#"
+                  onclick="Violet()"
+                >
+                  Violet
+                </li>
+                <li
+                  class="dropdown-item"
+                  id="#Violet"
+                  href="#"
+                  onclick="Purple()"
+                >
+                  Purple
+                </li>
+
+                <li
+                  class="dropdown-item"
+                  id="#Violet"
+                  href="#"
+                  onclick="blue()"
+                >
+                  Blue
+                </li>
+              </div>
+            </div>
           </ul>
         </div>
         <!-- </div> -->
       </nav>
-      <div class="main d-flex flex-wrap bg-success ps-2">
+      <div class="main d-flex flex-wrap ps-2">
         <div class="row d-flex flex-wrap">
           <div class="col-lg-6 d-flex flex-wrap ps-5" style="margin-top: 100px">
             <p class="text-light">
@@ -128,7 +180,8 @@
           </div>
         </div>
       </div>
-
+    </div>
+    <div class="container-fluid" style="background-color: rgb(238, 236, 236)">
       <div class="container">
         <div class="row mt-5">
           <p class="mt-5 h1" style="text-align: center">About Us</p>
@@ -323,7 +376,7 @@
             </div>
           </div>
         </div>
-        <div class="row px-4 pb-5">
+        <div class="row px-4 pt-3 pb-5">
           <div class="col-md-4">
             <div class="col1 mt-2 bg-white">
               <span class="material-symbols-outlined" style="font-size: 50px">
@@ -372,197 +425,422 @@
         </div>
       </div>
     </div>
-    <div class="container">
-      <h1 style="text-align: center" class="pt-5">Testinomals</h1>
-      <p style="text-align: center">
-        Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit
-        amet consectetur adipisicing
-      </p>
 
-      <div class="row d-flex flex-wrap">
-        <div class="col-md-4">
-          <div
-            class="col mt-2 bg-light text-body"
-            style="border-radius: 8%; padding-bottom: 20px"
-          >
-            <img
-              src="./images/download.jpeg"
-              class="rounded-circle"
-              width="120px"
-              height="120px"
-              alt=""
-              style="padding-left: 10px; padding-top: 10px"
-            />
+    <div class="container-fluid" style="background-color: white">
+      <div class="container">
+        <h1 style="text-align: center" class="pt-5">Testinomals</h1>
+        <p style="text-align: center">
+          Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor
+          sit amet consectetur adipisicing
+        </p>
 
-            <a><b>SAM NEW</b></a>
+        <div class="row d-flex flex-wrap">
+          <div class="col-md-4">
+            <div
+              class="col mt-2 bg-light text-body"
+              style="border-radius: 8%; padding-bottom: 20px"
+            >
+              <img
+                src="./images/download.jpeg"
+                class="rounded-circle"
+                width="120px"
+                height="120px"
+                alt=""
+              />
 
-            <p style="margin-top: 90px; padding-left: 10px">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id,
-              rerum numquam totam dignissimos recusandae unde iure tenetur
-              assumenda eius perferendis, delectus modi quam mollitia minus
-              obcaecati, velit facilis vel laudantium.
-            </p>
+              <a><b>SAM NEW</b></a>
+
+              <p style="margin-top: 90px; padding-left: 10px">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id,
+                rerum numquam totam dignissimos recusandae unde iure tenetur
+                assumenda eius perferendis, delectus modi quam mollitia minus
+                obcaecati, velit facilis vel laudantium.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div
-            class="col mt-2 bg-light text-body"
-            style="border-radius: 8%; padding-bottom: 20px"
-          >
-            <img
-              src="./images/download.jpeg"
-              class="rounded-circle"
-              width="120px"
-              height="120px"
-              alt=""
-              style="padding-left: 10px; padding-top: 10px"
-            />
+          <div class="col-md-4">
+            <div
+              class="col mt-2 bg-light text-body"
+              style="border-radius: 8%; padding-bottom: 20px"
+            >
+              <img
+                src="./images/download.jpeg"
+                class="rounded-circle"
+                width="120px"
+                height="120px"
+                alt=""
+                style="padding-left: 10px; padding-top: 10px"
+              />
 
-            <a><b>SAM NEW</b></a>
+              <a><b>SAM NEW</b></a>
 
-            <p style="margin-top: 90px; padding-left: 10px">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id,
-              rerum numquam totam dignissimos recusandae unde iure tenetur
-              assumenda eius perferendis, delectus modi quam mollitia minus
-              obcaecati, velit facilis vel laudantium.
-            </p>
+              <p style="margin-top: 90px; padding-left: 10px">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id,
+                rerum numquam totam dignissimos recusandae unde iure tenetur
+                assumenda eius perferendis, delectus modi quam mollitia minus
+                obcaecati, velit facilis vel laudantium.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div
-            class="col mt-2 bg-light text-body"
-            style="border-radius: 8%; padding-bottom: 20px"
-          >
-            <img
-              src="./images/download.jpeg"
-              class="rounded-circle"
-              width="120px"
-              height="120px"
-              alt=""
-              style="padding-left: 10px; padding-top: 10px"
-            />
+          <div class="col-md-4">
+            <div
+              class="col mt-2 bg-light text-body"
+              style="border-radius: 8%; padding-bottom: 20px"
+            >
+              <img
+                src="./images/download.jpeg"
+                class="rounded-circle"
+                width="120px"
+                height="120px"
+                alt=""
+                style="padding-left: 10px; padding-top: 10px"
+              />
 
-            <a><b>SAM NEW</b></a>
+              <a><b>SAM NEW</b></a>
 
-            <p style="margin-top: 90px; padding-left: 10px">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id,
-              rerum numquam totam dignissimos recusandae unde iure tenetur
-              assumenda eius perferendis, delectus modi quam mollitia minus
-              obcaecati, velit facilis vel laudantium.
-            </p>
+              <p style="margin-top: 90px; padding-left: 10px">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id,
+                rerum numquam totam dignissimos recusandae unde iure tenetur
+                assumenda eius perferendis, delectus modi quam mollitia minus
+                obcaecati, velit facilis vel laudantium.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <h1 style="text-align: center">Portfolio</h1>
-    <p style="text-align: center">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis vitae
-      repellendus fuga amet perspiciatis officiis. Ullam dolorem tenetur corp
-    </p>
+    <div
+      class="container-fluid pt-4"
+      style="background-color: rgb(238, 236, 236)"
+    >
+      <div class="container">
+        <h1 style="text-align: center">Portfolio</h1>
+        <p style="text-align: center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+          vitae repellendus fuga amet perspiciatis officiis. Ullam dolorem
+          tenetur corp
+        </p>
 
-    <!-- <nav class="navbar navbar-expand-sm justify-content-center"> -->
+        <!-- <nav class="navbar navbar-expand-sm justify-content-center"> -->
 
-    <ul class="nav nav-tabs justify-content-center" role="tablist">
-      <li class="nav-item">
-        <a class="nav-link active" data-bs-toggle="tab" href="#home">All</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-bs-toggle="tab" href="#menu1">App</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-bs-toggle="tab" href="#menu2">Product</a>
-      </li>
-    </ul>
-    <div class="tab-content">
-      <div id="home" class="container tab-pane active">
-        <br />
-        <!-- <h3>HOME</h3>
+        <ul
+          class="nav nav-tabs justify-content-center border border-0"
+          role="tablist"
+        >
+          <li class="nav-item">
+            <a
+              class="nav-link active text-dark"
+              data-bs-toggle="tab"
+              href="#home"
+              >All</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" data-bs-toggle="tab" href="#menu1"
+              >App</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" data-bs-toggle="tab" href="#product2"
+              >Product</a
+            >
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div id="home" class="container tab-pane active">
+            <br />
+            <!-- <h3>HOME</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
-        <div class="ms d-flex">
-          <div class="gallery">
-            <a target="_blank" href="">
-              <img
-                src="./images/pexels-pixabay-268533.jpg"
-                alt="Cinque Terre"
-                width="100%"
-              />
-            </a>
-            <div class="desc">Add a description of the image here</div>
+            <div class="row pb-5 d-flex">
+              <div class="col bg-light p-0" style="padding: 0; margin: 15px">
+                <img
+                  src="./images/pexels-pixabay-268533.jpg"
+                  alt="Cinque Terre"
+                  width="100%"
+                />
+                <div class="desc">
+                  <h1>All</h1>
+                  <p class="text-secondary">
+                    Add a description of the image here
+                  </p>
+                </div>
+              </div>
+              <div class="col bg-light" style="padding: 0; margin: 15px">
+                <a target="_blank" href="">
+                  <img
+                    src="./images/pexels-pixabay-268533.jpg"
+                    alt="Cinque Terre"
+                    width="100%"
+                  />
+                </a>
+                <div class="desc">
+                  <h1>All</h1>
+                  <p class="text-secondary">
+                    Add a description of the image here
+                  </p>
+                </div>
+              </div>
+              <div class="col bg-light" style="padding: 0; margin: 15px">
+                <a target="_blank" href="">
+                  <img
+                    src="./images/pexels-pixabay-268533.jpg"
+                    alt="Cinque Terre"
+                    width="100%"
+                  />
+                </a>
+                <div class="desc">
+                  <h1>All</h1>
+                  <p class="text-secondary">
+                    Add a description of the image here
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row pb-5 d-flex">
+              <div
+                class="col p-0 bg-light border border-1"
+                style="padding: 0; margin: 15px"
+              >
+                <a target="_blank" href="">
+                  <img
+                    src="./images/pexels-pixabay-268533.jpg"
+                    alt="Cinque Terre"
+                    width="100%"
+                  />
+                </a>
+                <div class="desc">
+                  <h1>APP</h1>
+                  <p class="text-secondary">
+                    Add a description of the image here
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col bg-light border border-1"
+                style="padding: 0; margin: 15px"
+              >
+                <a target="" href="">
+                  <img
+                    src="./images/pexels-pixabay-268533.jpg"
+                    alt="Cinque Terre"
+                    width="100%"
+                  />
+                </a>
+                <div class="desc">
+                  <h1>APP</h1>
+                  <p class="text-secondary">
+                    Add a description of the image here
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col bg-light border border-1"
+                style="padding: 0; margin: 15px"
+              >
+                <a target="_blank" href="">
+                  <img
+                    src="./images/pexels-pixabay-268533.jpg"
+                    alt="Cinque Terre"
+                    width="100%"
+                  />
+                </a>
+                <div class="desc">
+                  <h1>APP</h1>
+                  <p class="text-secondary">
+                    Add a description of the image here
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row pb-5 d-flex">
+              <div
+                class="col bg-light border border-1 p-0"
+                style="padding: 0; margin: 15px"
+              >
+                <a target="_blank" href="">
+                  <img
+                    src="./images/pexels-pixabay-268533.jpg"
+                    alt="Cinque Terre"
+                    width="100%"
+                  />
+                </a>
+                <div class="desc">
+                  <h1>product</h1>
+                  <p class="text-secondary">
+                    Add a description of the image here
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col bg-light border border-1"
+                style="padding: 0; margin: 15px"
+              >
+                <a target="_blank" href="">
+                  <img
+                    src="./images/pexels-pixabay-268533.jpg"
+                    alt="Cinque Terre"
+                    width="100%"
+                  />
+                </a>
+                <div class="desc">
+                  <h1>product</h1>
+                  <p class="text-secondary">
+                    Add a description of the image here
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col bg-light border border-1"
+                style="padding: 0; margin: 15px"
+              >
+                <a target="_blank" href="">
+                  <img
+                    src="./images/pexels-pixabay-268533.jpg"
+                    alt="Cinque Terre"
+                    width="100%"
+                  />
+                </a>
+                <div class="desc">
+                  <h1>product</h1>
+                  <p class="text-secondary">
+                    Add a description of the image here
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="gallery">
-            <a target="_blank" href="">
-              <img
-                src="./images/pexels-pixabay-268533.jpg"
-                alt="Cinque Terre"
-                width="100%"
-              />
-            </a>
-            <div class="desc">Add a description of the image here</div>
-          </div>
-          <div class="gallery">
-            <a target="_blank" href="">
-              <img
-                src="./images/pexels-pixabay-268533.jpg"
-                alt="Cinque Terre"
-                width="100%"
-              />
-            </a>
-            <div class="desc">Add a description of the image here</div>
-          </div>
-        </div>
+          <div id="menu1" class="container tab-pane">
+            <br />
 
-        <div id="menu1" class="container tab-pane fade">
-          <br />
-
-          <!-- <h3>Menu 1</h3>
+            <!-- <h3>Menu 1</h3>
           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
-          <div class="ms d-flex">
-            <div class="gallery">
-              <a target="_blank" href="">
-                <img
-                  src="./images/pexels-pixabay-268533.jpg"
-                  alt="Cinque Terre"
-                  width="100%"
-                />
-              </a>
-              <div class="desc">
-                <h1>app</h1>
-                <p>a description of the image here</p>
+            <div class="row pb-5 d-flex">
+              <div
+                class="col bg-light border border-1 p-0"
+                style="padding: 0; margin: 15px"
+              >
+                <a target="_blank" href="">
+                  <img
+                    src="./images/pexels-pixabay-268533.jpg"
+                    alt="Cinque Terre"
+                    width="100%"
+                  />
+                </a>
+                <div class="desc">
+                  <h1>APP</h1>
+                  <p class="text-secondary">a description of the image here</p>
+                </div>
+              </div>
+
+              <div
+                class="col bg-light border border-1"
+                style="padding: 0; margin: 15px"
+              >
+                <a target="_blank" href="">
+                  <img
+                    src="./images/pexels-pixabay-268533.jpg"
+                    alt="Cinque Terre"
+                    width="100%"
+                  />
+                </a>
+                <div class="desc">
+                  <h1>APP</h1>
+                  <p class="text-secondary">
+                    Add a description of the image here
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="col bg-light border border-1"
+                style="padding: 0; margin: 15px"
+              >
+                <a target="_blank" href="">
+                  <img
+                    src="./images/pexels-pixabay-268533.jpg"
+                    alt="Cinque Terre"
+                    width="100%"
+                  />
+                </a>
+                <div class="desc">
+                  <h1>APP</h1>
+                  <p class="text-secondary">
+                    Add a description of the image here
+                  </p>
+                </div>
               </div>
             </div>
+          </div>
 
-            <div class="gallery">
-              <a target="_blank" href="">
-                <img
-                  src="./images/pexels-pixabay-268533.jpg"
-                  alt="Cinque Terre"
-                  width="100%"
-                />
-              </a>
-              <div class="desc">
-                <h1>app</h1>
-                <p>a description of the image here</p>
+          <div id="product2" class="container tab-pane">
+            <br />
+
+            <!-- <h3>Menu 1</h3>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+            <div class="row pb-5 d-flex">
+              <div
+                class="col p-0 border border-1 bg-light"
+                style="padding: 0; margin: 15px"
+              >
+                <a target="_blank" href="">
+                  <img
+                    src="./images/pexels-pixabay-268533.jpg"
+                    alt="Cinque Terre"
+                    width="100%"
+                  />
+                </a>
+                <div class="desc">
+                  <h1>product</h1>
+                  <p class="text-secondary">
+                    Add a description of the image here
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <div class="gallery">
-              <a target="_blank" href="">
-                <img
-                  src="./images/pexels-pixabay-268533.jpg"
-                  alt="Cinque Terre"
-                  width="100%"
-                />
-              </a>
-              <div class="desc">
-                <h1>Add</h1>
-                <p>Add a description of the image here</p>
+              <div
+                class="col bg-light border border-1"
+                style="padding: 0; margin: 15px"
+              >
+                <a target="_blank" href="">
+                  <img
+                    src="./images/pexels-pixabay-268533.jpg"
+                    alt="Cinque Terre"
+                    width="100%"
+                  />
+                </a>
+                <div class="desc">
+                  <h1>product</h1>
+                  <p class="text-secondary">
+                    Add a description of the image here
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="col bg-light border border-1"
+                style="padding: 0; margin: 15px"
+              >
+                <a target="_blank" href="">
+                  <img
+                    src="./images/pexels-pixabay-268533.jpg"
+                    alt="Cinque Terre"
+                    width="100%"
+                  />
+                </a>
+                <div class="desc">
+                  <h1>product</h1>
+                  <p class="text-secondary">
+                    Add a description of the image here
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="container-fluid">
+
+    <div class="container-fluid pt-5" style="background-color: white">
       <div class="container">
         <div class="row">
           <h1 style="text-align: center">OUR TEAM</h1>
@@ -588,10 +866,26 @@
               <li>
                 <a class="text-secondary text-decoration-none">Web Developer</a>
               </li>
-              <span class="material-symbols-outlined p-2"> favorite </span>
-              <span class="material-symbols-outlined p-2"> favorite </span>
-              <span class="material-symbols-outlined p-2"> favorite </span>
-              <span class="material-symbols-outlined p-2"> favorite </span>
+              <span
+                class="material-symbols-outlined rounded-circle border border-1 p-2"
+              >
+                favorite
+              </span>
+              <span
+                class="material-symbols-outlined rounded-circle border border-1 p-2"
+              >
+                favorite
+              </span>
+              <span
+                class="material-symbols-outlined rounded-circle border border-1 p-2"
+              >
+                favorite
+              </span>
+              <span
+                class="material-symbols-outlined rounded-circle border border-1 p-2"
+              >
+                favorite
+              </span>
             </ul>
           </div>
           <div class="col-md-3 pt-5">
@@ -608,10 +902,26 @@
               <li>
                 <a class="text-secondary text-decoration-none">Web Developer</a>
               </li>
-              <span class="material-symbols-outlined p-2"> favorite </span>
-              <span class="material-symbols-outlined p-2"> favorite </span>
-              <span class="material-symbols-outlined p-2"> favorite </span>
-              <span class="material-symbols-outlined p-2"> favorite </span>
+              <span
+                class="material-symbols-outlined rounded-circle border border-1 p-2"
+              >
+                favorite
+              </span>
+              <span
+                class="material-symbols-outlined rounded-circle border border-1 p-2"
+              >
+                favorite
+              </span>
+              <span
+                class="material-symbols-outlined rounded-circle border border-1 p-2"
+              >
+                favorite
+              </span>
+              <span
+                class="material-symbols-outlined rounded-circle border border-1 p-2"
+              >
+                favorite
+              </span>
             </ul>
           </div>
           <div class="col-md-3 pt-5">
@@ -628,10 +938,26 @@
               <li>
                 <a class="text-secondary text-decoration-none">Web Developer</a>
               </li>
-              <span class="material-symbols-outlined p-2"> favorite </span>
-              <span class="material-symbols-outlined p-2"> favorite </span>
-              <span class="material-symbols-outlined p-2"> favorite </span>
-              <span class="material-symbols-outlined p-2"> favorite </span>
+              <span
+                class="material-symbols-outlined rounded-circle border border-1 p-2"
+              >
+                favorite
+              </span>
+              <span
+                class="material-symbols-outlined rounded-circle border border-1 p-2"
+              >
+                favorite
+              </span>
+              <span
+                class="material-symbols-outlined rounded-circle border border-1 p-2"
+              >
+                favorite
+              </span>
+              <span
+                class="material-symbols-outlined rounded-circle border border-1 p-2"
+              >
+                favorite
+              </span>
             </ul>
           </div>
           <div class="col-md-3 pt-5">
@@ -648,10 +974,26 @@
               <li>
                 <a class="text-secondary text-decoration-none">Web Developer</a>
               </li>
-              <span class="material-symbols-outlined p-2"> favorite </span>
-              <span class="material-symbols-outlined p-2"> favorite </span>
-              <span class="material-symbols-outlined p-2"> favorite </span>
-              <span class="material-symbols-outlined p-2"> favorite </span>
+              <span
+                class="material-symbols-outlined rounded-circle border border-1 p-2"
+              >
+                favorite
+              </span>
+              <span
+                class="material-symbols-outlined rounded-circle border border-1 p-2"
+              >
+                favorite
+              </span>
+              <span
+                class="material-symbols-outlined rounded-circle border border-1 p-2"
+              >
+                favorite
+              </span>
+              <span
+                class="material-symbols-outlined rounded-circle border border-1 p-2"
+              >
+                favorite
+              </span>
             </ul>
           </div>
         </div>
@@ -659,7 +1001,7 @@
     </div>
 
     <div
-      class="container-fluid pb-5"
+      class="container-fluid pb-5 pt-5"
       style="background-color: rgb(238, 236, 236)"
     >
       <div class="container">
@@ -721,75 +1063,75 @@
         </div>
       </div>
     </div>
-    <div class="container" style="margin-bottom: 30px">
-      <!-- <div class="container bg-light"> -->
-      <div class="left2">
-        <div class="left1">
-          <p style="font-size: 30px">Frequently Asked Question</p>
-          <p style="padding-right: 60px">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
-            accusantium modi sit impedit quod perspiciatis magnam nisi ullam
-            voluptatum minus, velit repudiandae! Ab, ad sunt blanditiis natus
-            cum dignissimos culpa?
-          </p>
-        </div>
-        <div class="right2">
-          <div id="accordion">
-            <div class="card">
-              <div class="card-header">
-                <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
-                  1. what's your Name??
-                </a>
-              </div>
-              <div
-                id="collapseOne"
-                class="collapse show"
-                data-bs-parent="#accordion"
-              >
-                <div class="card-body">My Name is Jay</div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header">
-                <a
-                  class="collapsed btn"
-                  data-bs-toggle="collapse"
-                  href="#collapseTwo"
+    <div class="container-fluid" style="background-color: white">
+      <div class="container">
+        <div class="left2">
+          <div class="left1">
+            <p style="font-size: 30px">Frequently Asked Question</p>
+            <p style="padding-right: 60px">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
+              accusantium modi sit impedit quod perspiciatis magnam nisi ullam
+              voluptatum minus, velit repudiandae! Ab, ad sunt blanditiis natus
+              cum dignissimos culpa?
+            </p>
+          </div>
+          <div class="right2">
+            <div id="accordion">
+              <div class="card">
+                <div class="card-header">
+                  <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                    1. what's your Name??
+                  </a>
+                </div>
+                <div
+                  id="collapseOne"
+                  class="collapse show"
+                  data-bs-parent="#accordion"
                 >
-                  2.In which Standard are you studying??
-                </a>
+                  <div class="card-body">My Name is Jay</div>
+                </div>
               </div>
-              <div
-                id="collapseTwo"
-                class="collapse"
-                data-bs-parent="#accordion"
-              >
-                <div class="card-body">In 15th As an Bsc.IT</div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header">
-                <a
-                  class="collapsed btn"
-                  data-bs-toggle="collapse"
-                  href="#collapseThree"
+              <div class="card">
+                <div class="card-header">
+                  <a
+                    class="collapsed btn"
+                    data-bs-toggle="collapse"
+                    href="#collapseTwo"
+                  >
+                    2.In which Standard are you studying??
+                  </a>
+                </div>
+                <div
+                  id="collapseTwo"
+                  class="collapse"
+                  data-bs-parent="#accordion"
                 >
-                  3.From where and which college??
-                </a>
+                  <div class="card-body">In 15th As an Bsc.IT</div>
+                </div>
               </div>
-              <div
-                id="collapseThree"
-                class="collapse"
-                data-bs-parent="#accordion"
-              >
-                <div class="card-body">From Mumbai KES Shroff College</div>
+              <div class="card">
+                <div class="card-header">
+                  <a
+                    class="collapsed btn"
+                    data-bs-toggle="collapse"
+                    href="#collapseThree"
+                  >
+                    3.From where and which college??
+                  </a>
+                </div>
+                <div
+                  id="collapseThree"
+                  class="collapse"
+                  data-bs-parent="#accordion"
+                >
+                  <div class="card-body">From Mumbai KES Shroff College</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
     <div
       class="container-fluid"
       style="background-color: rgb(238, 236, 236); padding-bottom: 40px"
@@ -883,94 +1225,112 @@
         </div>
       </div>
     </div>
-    <div class="container">
-      <h2 style="text-align: center" class="pt-5">Contact Us</h2>
-      <p style="text-align: center">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-        vitae repellendus fuga amet perspiciatis officiis. Ullam dolorem tenetur
-        corp
-      </p>
+    <div class="container-fluid pb-5" style="background-color: white">
+      <div class="container">
+        <h2 style="text-align: center" class="pt-5">Contact Us</h2>
+        <p style="text-align: center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+          vitae repellendus fuga amet perspiciatis officiis. Ullam dolorem
+          tenetur corp
+        </p>
 
-      <div class="eote text-light">
-        <div class="row">
-          <div class="col-lg-4" style="background-color: rgb(80, 148, 80)">
-            <div class="xx me-4">
-              <ul class="" style="list-style-type: none">
-                <li class="lia mt-5 pt-3 pb-3 me-4">
-                  <span class="material-symbols-outlined"> location_on </span>
-                  Location
-                  <p>203,Sanpada Railway station</p>
-                </li>
-                <br />
+        <div class="eote text-light">
+          <div class="row">
+            <div class="col-lg-4 msw">
+              <div class="xx me-4">
+                <ul class="" style="list-style-type: none">
+                  <li class="lia mt-5 pt-3 pb-3 me-4">
+                    <span
+                      class="material-symbols-outlined rounded-circle border border-1 p-2"
+                    >
+                      location_on
+                    </span>
+                    <a> Location</a>
+                    <p class="px-4 align-items-center">
+                      203,Sanpada Railway station
+                    </p>
+                  </li>
+                  <br />
 
-                <li class="lia pt-3 pb-3 me-4">
-                  <span class="material-symbols-outlined"> mail </span>Email
-                  <p>contact@example.com</p>
-                </li>
-                <br />
+                  <li class="lia pt-3 pb-3 me-4">
+                    <span
+                      class="material-symbols-outlined rounded-circle border border-1 p-2"
+                    >
+                      mail </span
+                    >Email
+                    <p>contact@example.com</p>
+                  </li>
+                  <br />
 
-                <li class="lia pt-3 pb-3 me-4">
-                  <span class="material-symbols-outlined"> call </span>Call
-                  <p>+917789925289</p>
-                </li>
-                <br />
+                  <li class="lia pt-3 pb-3 me-4">
+                    <span
+                      class="material-symbols-outlined rounded-circle border border-1 p-2"
+                    >
+                      call </span
+                    >Call
+                    <p>+917789925289</p>
+                  </li>
+                  <br />
 
-                <li class="lia pt-3 pb-3 me-4">
-                  <span class="material-symbols-outlined">
-                    hourglass_disabled </span
-                  >Open Hours
-                  <p>9:00-18:00</p>
-                </li>
-              </ul>
+                  <li class="lia pt-3 pb-3 me-4">
+                    <span
+                      class="material-symbols-outlined rounded-circle border border-1 p-2"
+                    >
+                      hourglass_disabled </span
+                    >Open Hours
+                    <p>9:00-18:00</p>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
 
-          <div class="col-lg-8">
-            <form action="">
-              <div class="row">
-                <div class="col">
-                  <label for="Your Name"></label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Your Name"
-                  />
+            <div class="col-lg-8">
+              <form action="">
+                <div class="row">
+                  <div class="col">
+                    <label for="Your Name"></label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Your Name"
+                    />
+                  </div>
+                  <div class="col">
+                    <label for=""></label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Your Email"
+                    />
+                  </div>
                 </div>
-                <div class="col">
-                  <label for=""></label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Your Email"
-                  />
+
+                <label for="" class=""></label>
+                <input
+                  type="text"
+                  class="form-control mt-5"
+                  placeholder="Your subject"
+                />
+
+                <label for="" class="mt-5"></label>
+                <textarea
+                  name="Message"
+                  class="form-control"
+                  placeholder="Message"
+                  rows="8"
+                ></textarea>
+                <div class="btn d-flex justify-content-center">
+                  <button type="submit" class="btn btn-success">
+                    Send Message
+                  </button>
                 </div>
-              </div>
-
-              <label for="" class=""></label>
-              <input
-                type="text"
-                class="form-control mt-5"
-                placeholder="Your subject"
-              />
-
-              <label for="" class="mt-5"></label>
-              <textarea
-                name="Message"
-                class="form-control"
-                placeholder="Message"
-                rows="8"
-              ></textarea>
-              <div class="btn d-flex justify-content-center">
-                <button type="submit" class="btn btn-success">
-                  Send Message
-                </button>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="last bg-success text-light mt-5 pt-5">
+    <div class="last text-light pt-5">
       <div class="left">
         <b>Impact</b>
         <p>
@@ -1030,11 +1390,35 @@
         </ul>
       </div>
     </div>
-    <p style="text-align: center" class="bg-success text-light">
+    <p style="text-align: center" class="text-light">
       @Copyright 2022-2023.All Rights Reserved
     </p>
     <!-- </div> -->
     <!-- </div> -->
+
+    <script>
+      function red() {
+        document.body.style.backgroundColor = "red";
+      }
+      function pink() {
+        document.body.style.backgroundColor = "pink";
+      }
+      function Violet() {
+        document.body.style.backgroundColor = "Violet";
+      }
+      function Black() {
+        document.body.style.backgroundColor = "Black";
+      }
+      function Purple() {
+        document.body.style.backgroundColor = "purple";
+      }
+      function blue() {
+        document.body.style.backgroundColor = "blue";
+      }
+      function color() {
+        document.style.backgroundColor = "color";
+      }
+    </script>
 
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
