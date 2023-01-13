@@ -60,15 +60,9 @@
             <li class="nav-item">
               <a class="nav-link text-light" href="#">Test</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#">Blog</a>
-            </li>
 
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">Portfolio</a>
+              <a class="nav-link text-light" href="#">Services</a>
             </li>
             <div class="dropdown">
               <button
@@ -79,28 +73,23 @@
                 Color
               </button>
               <div class="dropdown-menu">
-                <li class="dropdown-item" id="#red" href="#">
-                  <input type="color" onclick="color()" />select color
-                </li>
-                <li class="dropdown-item" id="#pink" href="#" onclick="pink()">
-                  Pink
-                </li>
-
-                <li
-                  class="dropdown-item"
-                  id="#Black"
-                  href="#"
-                  onclick="Black()"
-                >
+                <!-- <li class="dropdown-item" id="#red" href="#">
+                  <input type="text" id="random" onclick="color()" />
+                </li> -->
+                <li class="dropdown-item xx" href="#" onclick="Black()">
                   Black
                 </li>
+
+                <li class="dropdown-item" id="red" href="#" onclick="red()">
+                  Red
+                </li>
                 <li
                   class="dropdown-item"
-                  id="#Violet"
+                  id="#Orange"
                   href="#"
-                  onclick="Violet()"
+                  onclick="Orange()"
                 >
-                  Violet
+                  Orange
                 </li>
                 <li
                   class="dropdown-item"
@@ -115,12 +104,15 @@
                   class="dropdown-item"
                   id="#Violet"
                   href="#"
-                  onclick="blue()"
+                  onclick="Violet()"
                 >
-                  Blue
+                  Violet
                 </li>
               </div>
             </div>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Blog</a>
+            </li>
           </ul>
         </div>
         <!-- </div> -->
@@ -181,9 +173,12 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid" style="background-color: rgb(238, 236, 236)">
+    <div
+      class="container-fluid mt-5"
+      style="background-color: rgb(238, 236, 236)"
+    >
       <div class="container">
-        <div class="row mt-5">
+        <div class="row">
           <p class="mt-5 h1" style="text-align: center">About Us</p>
           <p style="text-align: center">I AM A GOOD BOY HELLO GUYS WELCOME</p>
           <div class="col-lg-6">
@@ -283,8 +278,11 @@
             </div>
           </div>
         </div>
-
-        <div class="row mt-4">
+      </div>
+    </div>
+    <div class="container-fluid bg-white">
+      <div class="container">
+        <div class="row pt-5">
           <div class="col-lg-4" style="padding-left: 22px">
             <img src="./images/pexels-pixabay-268533.jpg" width="100%" alt="" />
           </div>
@@ -323,7 +321,7 @@
       </div>
     </div> -->
     <div
-      class="container-fluid pt-5 mt-5"
+      class="container-fluid pt-5"
       style="background-color: rgb(238, 236, 236)"
     >
       <div class="container">
@@ -1236,8 +1234,8 @@
 
         <div class="eote text-light">
           <div class="row">
-            <div class="col-lg-4 msw">
-              <div class="xx me-4">
+            <div class="col-lg-4" id="contact" onclick="">
+              <div class="me-4">
                 <ul class="" style="list-style-type: none">
                   <li class="lia mt-5 pt-3 pb-3 me-4">
                     <span
@@ -1284,7 +1282,7 @@
               </div>
             </div>
 
-            <div class="col-lg-8">
+            <div class="col-lg-8" style="background-color: white">
               <form action="">
                 <div class="row">
                   <div class="col">
@@ -1396,30 +1394,7 @@
     <!-- </div> -->
     <!-- </div> -->
 
-    <script>
-      function red() {
-        document.body.style.backgroundColor = "red";
-      }
-      function pink() {
-        document.body.style.backgroundColor = "pink";
-      }
-      function Violet() {
-        document.body.style.backgroundColor = "Violet";
-      }
-      function Black() {
-        document.body.style.backgroundColor = "Black";
-      }
-      function Purple() {
-        document.body.style.backgroundColor = "purple";
-      }
-      function blue() {
-        document.body.style.backgroundColor = "blue";
-      }
-      function color() {
-        document.style.backgroundColor = "color";
-      }
-    </script>
-
+    <script src="./color.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
   </body>
