@@ -4,7 +4,7 @@ function add(){
 
    
 let h2 = document.getElementById("click");
-  let table = "<td>jay</td> <td>50</td> <td>30</td> <td>54</td> <td>120</td> <td>75%</td>";
+  let table = "<tr><td>jay</td> <td>50</td> <td>30</td> <td>54</td> <td>120</td> <td>75%</td></tr>";
   h2.insertAdjacentHTML("afterbegin", table);
 
 
