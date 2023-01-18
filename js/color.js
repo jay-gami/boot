@@ -41,3 +41,4 @@ function Violet() {
   document.getElementById("contact").style.backgroundColor = "violet";
   document.getElementById("verbar").style.backgroundColor = "black";
 }
+

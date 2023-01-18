@@ -27,62 +27,27 @@
       </nav>
       <button
         type="button"
-        onclick="myadd()"
         class="btn mt-3 bg-success text-white"
+        onclick="one()"
       >
         Click Me
       </button>
-      <table class="table table-bordered mt-4 pt-4" id="click">
-        <form action="">
-          <thead>
-            <tr>
-              <!-- <th>Roll No</th> -->
 
-              <th>Roll No</th>
-              <th>Name</th>
-              <th>Maths</th>
-              <th>English</th>
-              <th>Science</th>
-              <th>Total</th>
-              <th>Percentage</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td id="roll"></td>
-              <td>
-                <input type="text" id="txtname" value="" onchange="add()" />
-              </td>
-              <td>
-                <input
-                  type="number"
-                  id="txtmaths"
-                  value=""
-                  onchange="add()
-                  "
-                />
-              </td>
-              <td>
-                <input
-                  type="number"
-                  id="txtenglish"
-                  value=""
-                  onchange="add()"
-                />
-              </td>
-              <td>
-                <input
-                  type="number"
-                  id="txtscience"
-                  value=""
-                  onchange="add()"
-                />
-              </td>
-              <td id="total"></td>
-              <td id="percentage"></td>
-            </tr>
-          </tbody>
-        </form>
+      <table class="table table-bordered mt-4 pt-4">
+        <thead>
+          <tr>
+            <!-- <th>Roll No</th> -->
+
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Maths</th>
+            <th>English</th>
+            <th>Science</th>
+            <th>Total</th>
+            <th>Percentage</th>
+          </tr>
+        </thead>
+        <tbody id="click"></tbody>
       </table>
     </div>
     <script src="./js/task3.js"></script>

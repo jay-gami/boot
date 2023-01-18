@@ -1,0 +1,15 @@
+/* body
+{
+    counter-reset: Serial;           
+}
+
+tbody
+{
+    border-collapse: separate;
+}
+
+tr td:first-child:before
+{
+  counter-increment: Serial;     
+  content:  counter(Serial); 
+} */
