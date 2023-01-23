@@ -30,7 +30,7 @@
         class="btn mt-3 bg-success text-white"
         onclick="AddNewRow()"
       >
-        Click Me
+        Add Row
       </button>
 
       <table class="table table-bordered mt-4 pt-4">
@@ -43,11 +43,22 @@
             <th>Maths</th>
             <th>English</th>
             <th>Science</th>
-            <th>Total</th>
+            <th id="one">Total</th>
             <th>Percentage</th>
           </tr>
         </thead>
         <tbody id="click"></tbody>
+      </table>
+      <table class="table table-bordered" id="table">
+        <thead>
+          <tr>
+            <td id="student">Students</td>
+            <td id="avg">Avg Marks</td>
+            <td id="max" class="demo">Highest Marks</td>
+            <td id="min" class="demo">Lowest Marks</td>
+          </tr>
+        </thead>
+        <tbody id="tb2"></tbody>
       </table>
     </div>
     <script src="./js/task3.js"></script>
