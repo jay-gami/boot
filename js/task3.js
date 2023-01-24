@@ -22,7 +22,7 @@ function AddNewRow() {
 function AddNewData(index) {
   var j;
   for (j = 1; j <= index; j++) {
-    var maths = document.getElementById("txtmaths" + j).value;
+    var maths = $("txtmaths" + j).value;
     var english = document.getElementById("txtenglish" + j).value;
     var science = document.getElementById("txtscience" + j).value;
     var total = Number(maths) + Number(english) + Number(science);
