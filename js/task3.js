@@ -8,12 +8,12 @@ sum++;
 i++;
 
   var table=`<tr >
-  <td id="roll">${sum}</td><td><input type="text" id="txtname${i}" class="demo"  ></td>
-  <td><input type="number" id="txtmaths${i}" class="demo" onchange="AddNewData(${i})" ></td>
-  <td><input type="number" id="txtenglish${i}" class="demo" onchange="AddNewData(${i})" ></td>
-  <td><input type="number" id="txtscience${i}" class="demo" onchange="AddNewData(${i})"></td>
-  <td id="total${i}" class="demo"></td>
-  <td id="percentage${i}" class="demo"></td>
+  <td id="rollno">${sum}</td><td><input type="text" id="txtname${i}"  onchange="AddNewData(${i})" ></td>
+  <td><input type="number" id="txtmaths${i}"  onchange="AddNewData(${i})" ></td>
+  <td><input type="number" id="txtenglish${i}"  onchange="AddNewData(${i})" ></td>
+  <td><input type="number" id="txtscience${i}"  onchange="AddNewData(${i})"></td>
+  <td id="total${i}" class="TotalMarks"></td>
+  <td id="percentage${i}"></td>
  </tr>`
 
 
@@ -30,7 +30,7 @@ i++;
 
 
 
-
+  
 
 function AddNewData(index) {
 
@@ -39,38 +39,41 @@ function AddNewData(index) {
   var maths=document.getElementById("txtmaths"+j).value;
   var english=document.getElementById("txtenglish"+j).value;
   var science=document.getElementById("txtscience"+j).value;
-  var students=document.getElementById("student"+j)
-  
-
   var total =Number(maths)+Number(english)+Number(science);
   document.getElementById("total"+j).innerHTML=total;
-
   var percentage =Number(total/300)*100;
   document.getElementById("percentage"+j).innerHTML=percentage;
+ 
 
 
 
-  const maxvalue=[total]
-  var max = maxvalue.reduce(function(a, b) {
-    return Math.max(a, b);
-});
+  var row=rollno.length;
+  document.getElementById("st1").innerHTML=row;
 
-const minvalue=[total]
-var min=minvalue.reduce(function(a,b){
-  return Math.min(a,b);
-});
-var table=`
-<td>${students+j}</td>
-<td>${avg}</td>
-<td>${max}</td>
-<td>${min}</td>
-`
+  
+  const TotalMarks = document.querySelectorAll('.TotalMarks');
+  let TotalMarksArray=[];
+  TotalMarks.forEach(el=>{
+  TotalMarksArray.push(el.innerHTML)
+  })
+  
+  TotalMarksArray.sort(function(a, b){return b-a});
+  document.getElementById("max").innerHTML = TotalMarksArray[0];
+  
+  TotalMarksArray.sort(function(a, b){return a-b});
+  document.getElementById("min").innerHTML = TotalMarksArray[0];
+  
+  const initial = 0;
+  const avg = TotalMarksArray.reduce(
+    (a, b) => Number(a) + Number(b),
+    initial)/(TotalMarksArray.length);
+  document.getElementById("avg").innerHTML=avg;
 
-document.getElementById("tb2").innerHTML=table
+  
+  }
 }
 
 
-}
 
 
 
