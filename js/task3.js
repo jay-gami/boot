@@ -36,6 +36,7 @@ function AddNewData(index) {
 
   var j;
   for(j=1;j<=index;j++){
+    
   var maths=document.getElementById("txtmaths"+j).value;
   var english=document.getElementById("txtenglish"+j).value;
   var science=document.getElementById("txtscience"+j).value;
@@ -69,7 +70,7 @@ function AddNewData(index) {
     initial)/(TotalMarksArray.length);
   document.getElementById("avg").innerHTML=avg;
 
-  
+
   }
 }
 
