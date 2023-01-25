@@ -1,58 +1,56 @@
 var sum = 0;
-
 var i = 0;
-function AddNewRow() {
-  let h2 = document.getElementById("click");
-
+$(".btn").click(function () {
   sum++;
   i++;
-
-  var table = `<tr >
-  <td id="rollno">${sum}</td><td><input type="text" id="txtname${i}"  onchange="AddNewData(${i})" ></td>
-  <td><input type="number" id="txtmaths${i}"  onchange="AddNewData(${i})" ></td>
-  <td><input type="number" id="txtenglish${i}"  onchange="AddNewData(${i})" ></td>
-  <td><input type="number" id="txtscience${i}"  onchange="AddNewData(${i})"></td>
-  <td id="total${i}" class="TotalMarks"></td>
+  var table = `<tr id="row">
+  <td id="rollno">${sum}</td><td><input type="text" id="txtname${i}"></td>
+  <td><input type="number" id="txtmaths${i}" ></td>
+  <td><input type="number" id="txtenglish${i}" ></td>
+  <td><input type="number" id="txtscience${i}" ></td>
+  <td id="total${i}" class="TotalMarks" ></td>
   <td id="percentage${i}"></td>
- </tr>`;
+  </tr>`;
 
-  h2.insertAdjacentHTML("beforeend", table);
-}
+  $("#click").append(table);
+});
 
-function AddNewData(index) {
-  var j;
-  for (j = 1; j <= index; j++) {
-    var maths = $("txtmaths" + j).value;
-    var english = document.getElementById("txtenglish" + j).value;
-    var science = document.getElementById("txtscience" + j).value;
-    var total = Number(maths) + Number(english) + Number(science);
-    document.getElementById("total" + j).innerHTML = total;
-    var percentage = Number(total / 300) * 100;
-    document.getElementById("percentage" + j).innerHTML = percentage;
+$("#click").change("#row", function () {
+  for (var j = 1; j <= i; j++) {
+    maths = $("#txtmaths" + j).val();
+    english = $("#txtenglish" + j).val();
+    science = $("#txtscience" + j).val();
+    total = Number(maths) + Number(english) + Number(science);
+    $("#total" + j).text(total);
 
-    var row = rollno.length;
-    document.getElementById("st1").innerHTML = row;
+    percentage = Number(total / 300) * 100;
+    $("#percentage" + j).text(percentage);
 
-    const TotalMarks = document.querySelectorAll(".TotalMarks");
+    row = rollno.length;
+    $("#st1").html(row);
+
+    const TotalMarks = $(".TotalMarks");
     let TotalMarksArray = [];
-    TotalMarks.forEach((el) => {
-      TotalMarksArray.push(el.innerHTML);
+    $.each(TotalMarks, function () {
+      TotalMarksArray.push($(this).text());
     });
+    console.log(TotalMarksArray);
 
     TotalMarksArray.sort(function (a, b) {
       return b - a;
     });
-    document.getElementById("max").innerHTML = TotalMarksArray[0];
+    $("#max").text(TotalMarksArray[0]);
 
     TotalMarksArray.sort(function (a, b) {
       return a - b;
     });
-    document.getElementById("min").innerHTML = TotalMarksArray[0];
+    $("#min").text(TotalMarksArray[0]);
 
     const initial = 0;
     const avg =
-      TotalMarksArray.reduce((a, b) => Number(a) + Number(b), initial) /
-      TotalMarksArray.length;
-    document.getElementById("avg").innerHTML = avg;
+      TotalMarksArray.reduce(function (a, b) {
+        return Number(a) + Number(b);
+      }, initial) / TotalMarksArray.length;
+    $("#avg").text(avg);
   }
-}
+});
