@@ -17,7 +17,6 @@ $(".btn").click(function () {
 
 $("#click").change("#row", function () {
   for (var j = 1; j <= i; j++) {
-    debugger;
     maths = $("#txtmaths" + j).val();
     english = $("#txtenglish" + j).val();
     science = $("#txtscience" + j).val();
