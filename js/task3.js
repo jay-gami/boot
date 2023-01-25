@@ -17,14 +17,15 @@ $(".btn").click(function () {
 
 $("#click").change("#row", function () {
   for (var j = 1; j <= i; j++) {
+    debugger;
     maths = $("#txtmaths" + j).val();
     english = $("#txtenglish" + j).val();
     science = $("#txtscience" + j).val();
     total = Number(maths) + Number(english) + Number(science);
-    $("#total" + j).text(total);
+    $("#total" + j).html(total);
 
     percentage = Number(total / 300) * 100;
-    $("#percentage" + j).text(percentage);
+    $("#percentage" + j).html(percentage);
 
     row = rollno.length;
     $("#roll").html(row);
@@ -32,25 +33,24 @@ $("#click").change("#row", function () {
     const TotalMarks = $(".TotalMarks");
     let TotalMarksArray = [];
     $.each(TotalMarks, function () {
-      TotalMarksArray.push($(this).text());
+      TotalMarksArray.push($(this).html());
     });
-    console.log(TotalMarksArray);
 
     TotalMarksArray.sort(function (a, b) {
       return b - a;
     });
-    $("#max").text(TotalMarksArray[0]);
+    $("#max").html(TotalMarksArray[0]);
 
     TotalMarksArray.sort(function (a, b) {
       return a - b;
     });
-    $("#min").text(TotalMarksArray[0]);
+    $("#min").html(TotalMarksArray[0]);
 
     const initial = 0;
     const avg =
       TotalMarksArray.reduce(function (a, b) {
         return Number(a) + Number(b);
       }, initial) / TotalMarksArray.length;
-    $("#avg").text(avg);
+    $("#avg").html(avg);
   }
 });
