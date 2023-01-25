@@ -27,7 +27,7 @@ $("#click").change("#row", function () {
     $("#percentage" + j).text(percentage);
 
     row = rollno.length;
-    $("#st1").html(row);
+    $("#roll").html(row);
 
     const TotalMarks = $(".TotalMarks");
     let TotalMarksArray = [];
