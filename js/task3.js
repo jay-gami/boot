@@ -1,6 +1,5 @@
 var sum = 0;
 var i = 0;
-var k = 0;
 $(document).ready(function () {
   $(".btn").click(function () {
     sum++;
@@ -18,6 +17,7 @@ $(document).ready(function () {
   </tr>`;
     $("#click").append(table);
   });
+
   $("tbody").change(function () {
     for (var j = 1; j <= i; j++) {
       maths = $("#txtmaths" + j).val();
@@ -30,6 +30,7 @@ $(document).ready(function () {
       $("#percentage" + j).html(percentage.toFixed());
 
       row = rollno.length;
+
       $("#roll").html(row);
 
       TotalMarks = $(".TotalMarks");
@@ -56,7 +57,34 @@ $(document).ready(function () {
       $("#avg").html(avg.toFixed());
     }
   });
+
   $("tbody").on("click", ".delete", function () {
     $(this).closest("tr").remove();
+
+    sum--;
+    $("#roll").html(sum);
+
+    TotalMarks = $(".TotalMarks");
+    let TotalMarksArray = [];
+    $.each(TotalMarks, function () {
+      TotalMarksArray.push($(this).html());
+    });
+
+    TotalMarksArray.sort(function (a, b) {
+      return b - a;
+    });
+    $("#max").html(TotalMarksArray[0]);
+
+    TotalMarksArray.sort(function (a, b) {
+      return a - b;
+    });
+    $("#min").html(TotalMarksArray[0]);
+
+    initial = 0;
+    avg =
+      TotalMarksArray.reduce(function (a, b) {
+        return Number(a) + Number(b);
+      }, initial) / TotalMarksArray.length;
+    $("#avg").html(avg.toFixed());
   });
 });
