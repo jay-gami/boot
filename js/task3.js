@@ -1,22 +1,23 @@
 var sum = 0;
 var i = 0;
+var k = 0;
 $(document).ready(function () {
   $(".btn").click(function () {
     sum++;
     i++;
     var table = `<tr>
-  <td id="rollno">${sum}</td><td><input type="text" id="txtname${i}"></td>
+  <td id="rollno">${sum}</td>
+  <td><input type="text" id="txtname${i}"></td>
   <td><input type="number" id="txtmaths${i}" ></td>
   <td><input type="number" id="txtenglish${i}" ></td>
   <td><input type="number" id="txtscience${i}" ></td>
   <td id="total${i}" class="TotalMarks" ></td>
-  <td id="percentage${i}"></td>
+  <td id="percentage${i}">  </td>  
+  <td><button type="button"  class="delete btn-success">Delete Row</button>
+  </td>
   </tr>`;
-
     $("#click").append(table);
   });
-});
-$(document).ready(function () {
   $("tbody").change(function () {
     for (var j = 1; j <= i; j++) {
       maths = $("#txtmaths" + j).val();
@@ -26,7 +27,7 @@ $(document).ready(function () {
       $("#total" + j).html(total);
 
       percentage = Number(total / 300) * 100;
-      $("#percentage" + j).html(percentage);
+      $("#percentage" + j).html(percentage.toFixed());
 
       row = rollno.length;
       $("#roll").html(row);
@@ -52,7 +53,10 @@ $(document).ready(function () {
         TotalMarksArray.reduce(function (a, b) {
           return Number(a) + Number(b);
         }, initial) / TotalMarksArray.length;
-      $("#avg").html(avg);
+      $("#avg").html(avg.toFixed());
     }
+  });
+  $("tbody").on("click", ".delete", function () {
+    $(this).closest("tr").remove();
   });
 });
