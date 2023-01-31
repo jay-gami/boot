@@ -57,7 +57,7 @@ $(document).ready(function () {
     }
   });
 
-  $("tbody").on("click", ".delete", function () {
+  $(".delete  ").on("click", ".delete", function () {
     $(this).closest("tr").remove();
 
     sum--;
