@@ -3,6 +3,7 @@ var i = 0;
 $(document).ready(function () {
   $(".btn").click(function () {
     sum++;
+    i++;
     $("#click").append(`<tr>
     <td id="rollno">${sum}</td>
     <td><input type="text" id="txtname${i}"></td>
@@ -14,7 +15,6 @@ $(document).ready(function () {
     <td><button type="button"  class="delete btn-success">Delete Row</button>
     </td>
     </tr>`);
-    i++;
   });
 
   $("tbody").change(function () {
@@ -57,7 +57,7 @@ $(document).ready(function () {
     }
   });
 
-  $(".delete  ").on("click", ".delete", function () {
+  $("tbody").on("click", ".delete", function () {
     $(this).closest("tr").remove();
 
     sum--;
