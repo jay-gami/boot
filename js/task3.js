@@ -3,19 +3,18 @@ var i = 0;
 $(document).ready(function () {
   $(".btn").click(function () {
     sum++;
+    $("#click").append(`<tr>
+    <td id="rollno">${sum}</td>
+    <td><input type="text" id="txtname${i}"></td>
+    <td><input type="number" id="txtmaths${i}" ></td>
+    <td><input type="number" id="txtenglish${i}" ></td>
+    <td><input type="number" id="txtscience${i}" ></td>
+    <td id="total${i}" class="TotalMarks" ></td>
+    <td id="percentage${i}">  </td>  
+    <td><button type="button"  class="delete btn-success">Delete Row</button>
+    </td>
+    </tr>`);
     i++;
-    var table = `<tr>
-  <td id="rollno">${sum}</td>
-  <td><input type="text" id="txtname${i}"></td>
-  <td><input type="number" id="txtmaths${i}" ></td>
-  <td><input type="number" id="txtenglish${i}" ></td>
-  <td><input type="number" id="txtscience${i}" ></td>
-  <td id="total${i}" class="TotalMarks" ></td>
-  <td id="percentage${i}">  </td>  
-  <td><button type="button"  class="delete btn-success">Delete Row</button>
-  </td>
-  </tr>`;
-    $("#click").append(table);
   });
 
   $("tbody").change(function () {
