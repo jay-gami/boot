@@ -1,60 +1,52 @@
-// var sum = 0;
+var sum = 0;
+var sum = 0;
 
-// var i = 0;
-// function AddNewRow() {
-//   let h2 = document.getElementById("click");
+var i = 0;
+i++;
 
-//   sum++;
-//   i++;
+function AddNewRow() {
+  sum++;
 
-//   var table = `<tr >
-//   <td id="rollno">${sum}</td><td><input type="text" id="txtname${i}" ></td>
-//   <td><input type="number" id="txtmaths${i}"   ></td>
-//   <td><input type="number" id="txtenglish${i}" ></td>
-//   <td><input type="number" id="txtscience${i}" ></td>
-//   <td id="total${i}" class="TotalMarks"></td>
-//   <td id="percentage${i}"></td>
-//  </tr>`;
+  var table = `<tr >
+  <td id="rollno">${sum}</td><td><input type="text" id="txtname${i}"  onchange="AddNewData(${i})" ></td>
+  <td><input type="number" id="txtmaths${i}"  onchange="AddNewData(${i})" ></td>
+  <td><input type="number" id="txtenglish${i}"  onchange="AddNewData(${i})" ></td>
+  <td><input type="number" id="txtscience${i}"  onchange="AddNewData(${i})"></td>
+  <td id="total${i}" class="TotalMarks"></td>
+  <td id="percentage${i}"></td>
+ </tr>`;
+  let h2 = document.getElementById("click");
 
-//   h2.insertAdjacentHTML("beforeend", table);
-// }
-// $(document).ready(function () {
-//   $("input").change(function (index) {
-//     var j;
-//     for (j = 1; j <= index; j++) {
-//       var maths = $("#txtmaths" + j).val();
-//       var english = $("#txtenglish" + j).val();
-//       var science = $("#txtscience" + j).val();
-//       var total = Number(maths) + Number(english) + Number(science);
-//       $("#total" + j).val(maths + science + english);
-//       var percentage = Number(total / 300) * 100;
-//       $("#percentage" + j).innerHTML = percentage;
+  h2.insertAdjacentHTML("beforeend", table);
+}
+function AddNewData(i) {
+  var maths = document.getElementById("txtmaths").value;
+  var english = document.getElementById("txtenglish").value;
+  var science = document.getElementById("txtscience").value;
+  var total = Number(maths) + Number(english) + Number(science);
+  document.getElementById("total" + i).innerHTML = total;
+  var percentage = Number(total / 300) * 100;
+  document.getElementById("percentage" + i).innerHTML = percentage;
 
-//       var row = rollno.length;
-//       $("#st1").innerHTML = row;
+  const TotalMarks = document.querySelectorAll(".TotalMarks");
+  let TotalMarksArray = [];
+  TotalMarks.forEach((el) => {
+    TotalMarksArray.push(el.innerHTML);
+  });
 
-//       //   const TotalMarks = $(".TotalMarks");
-//       //   let TotalMarksArray = [];
-//       //   TotalMarks.forEach((el) => {
-//       //     TotalMarksArray.push(el.innerHTML);
-//       //   });
+  TotalMarksArray.sort(function (a, b) {
+    return b - a;
+  });
+  document.getElementById("max").innerHTML = TotalMarksArray[0];
 
-//       //   TotalMarksArray.sort(function (a, b) {
-//       //     return b - a;
-//       //   });
-//       //   $("max").innerHTML = TotalMarksArray[0];
+  TotalMarksArray.sort(function (a, b) {
+    return a - b;
+  });
+  document.getElementById("min").innerHTML = TotalMarksArray[0];
 
-//       //   TotalMarksArray.sort(function (a, b) {
-//       //     return a - b;
-//       //   });
-//       //   $("min").innerHTML = TotalMarksArray[0];
-
-//       //   const initial = 0;
-//       //   const avg =
-//       //     TotalMarksArray.reduce((a, b) => Number(a) + Number(b), initial) /
-//       //     TotalMarksArray.length;
-//       //   $("avg").innerHTML = avg;
-//       // }
-//     }
-//   });
-// });
+  const initial = 0;
+  const avg =
+    TotalMarksArray.reduce((a, b) => Number(a) + Number(b), initial) /
+    TotalMarksArray.length;
+  document.getElementById("avg").innerHTML = avg;
+}
