@@ -53,7 +53,7 @@ $(document).ready(function () {
         TotalMarksArray.reduce(function (a, b) {
           return Number(a) + Number(b);
         }, initial) / TotalMarksArray.length;
-      $("#avg").html(avg.toFixed());
+      $("#avg").html(avg.toFixed(0));
     }
   });
 
@@ -84,6 +84,7 @@ $(document).ready(function () {
       TotalMarksArray.reduce(function (a, b) {
         return Number(a) + Number(b);
       }, initial) / TotalMarksArray.length;
-    $("#avg").html(avg.toFixed());
+    $("#avg").html(avg.toFixed(0));
+    i--;
   });
 });
